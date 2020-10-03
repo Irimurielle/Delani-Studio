@@ -9,106 +9,117 @@
         <title>Delani Studio</title>
     </head>
     <body>
-        <div class="container">
-            <img src="assets/logo/logo.png" class="img-responsive">
+        <div class="container-fluid" id="delani">
             <div class="welcome">
-                <h1>WELCOME</h1>
-                <h1>TO DELANI STUDIO</h1>
+                <img src="assets/logo/logo.png" class="logo">
+                <h1>WELCOME <br> TO DELANI STUDIO</h1>
                 <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
-                <img src="assets/mouse_click.png" class="img-responsive">
+                <img src="assets/mouse_click.png" class="click">
             </div>
         </div>
-        <div class="about-us">
-            <h2>ABOUT US</h2>
-            <p>When you work with us, you are part of a team of committed collaborators.All aspects of our software development process are intergrated, interactive and agile.</p>
-            <p>Our approach unifies design, development and product management to create exceptional products.</p>
-            <p>We start each project by understanding your business goals, the user's needs and the product requirements.</p>
-            <p>Then we help translate them into effective and elegant solutions.</p>
+        <div class="about">
+            <div class="text-center">
+                <h1>ABOUT US</h1>
+                <p>When you work with us, you are part of a team of committed collaborators.All aspects of our software development process are intergrated, interactive<br> and agile.</p>
+                <p>Our approach unifies design, development and product management to create exceptional products.</p>
+                <p>We start each project by understanding your business goals, the user's needs and the product requirements.</p>
+                <p>Then we help translate them into effective and elegant solutions.</p>
+            </div>
         </div>
         <div class="services">
-            <h2>SERVICES</h2>
-            <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision <br>
-            The outcome of this scoping session is a proposal or high-level statement of work<br>
-            based on your requirements, we can provide a complete offering or just the pieces you need.</p>
+            <div class="text-center">
+                <h1>SERVICES</h1>
+                <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision </p>
+                <p>The outcome of this scoping session is a proposal or high-level statement of work</p>
+                <p>based on your requirements, we can provide a complete offering or just the pieces you need.</p>
+            </div>
         </div>
-        <section>
-            <div class="what-we-do">
-                <h2>WHAT WE DO</h2>
-                <div>
+        <div class="what-we-do">
+            <h1 class="text-center">WHAT WE DO</h1>
+            <div class="row text-center">
+                <div class="col">
                     <img src="assets/services_icons/design_icon.png">
-                    <p>DESIGN</p>
-                    <p>The design is awesome.</p>
+                    <p><strong>DESIGN</strong></p>
+                    <div class="hide">
+                        <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. <br> Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="col">
                     <img src="assets/services_icons/dev_icon.png">
-                    <p>DEVELOPMENT</p>
-                    <p>Development is good.</p>
+                    <p><strong>DEVELOPMENT</strong></p>
+                    <div class="hide">
+                        <p>All engineers are fluent in the latest enterprise, mobile and web development technologies. <br> They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="col">
                     <img src="assets/services_icons/product_icon.png">
-                    <p>PRODUCT MANAGEMENT</p>
-                    <p>YES YES</p>
-                </div>
-            </div>
-            <div class="portfolio">
-                <h2>PORTFOLIO</h2>
-                <div class="row">
-                    <div class="column">
-                        <img src="assets/portfolio/work4.jpg" class="img-responsive">
-                    </div>
-                    <div class="column">
-                        <img src="assets/portfolio/work3.jpg" class="img-responsive">
-                    </div>
-                    <div class="column">
-                        <img src="assets/portfolio/work2.jpg" class="img-responsive">
-                    </div>
-                    <div class="column">
-                        <img src="assets/portfolio/work1.jpg"class="img-responsive">
-                        </div>
-                        <div class="column">
-                            <img src="assets/portfolio/work5.jpg" class="img-responsive">
-                        </div>
-                        <div class="column">
-                            <img src="assets/portfolio/work6.jpg" class="img-responsive">
-                        </div>
-                        <div class="column">
-                            <img src="assets/portfolio/work7.jpg" class="img-responsive">
-                        </div>
-                        <div class="column"></div>
-                            <img src="assets/portfolio/work8.jpg" class="img-responsive">
+                    <p><strong>PRODUCT MANAGEMENT</strong></p>
+                    <div class="hide">
+                        <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. <br> This iterative process allows for changes as business requirements evolve.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="contact-us">
-            <h2>CONTACT US</h2>
-            <form class="form-inline">
-                <div class="form-group">
-                    <label for="Name"></label>
-                    <input type="text" class="form-control" id="name" placeholder="Name...">
+        </div>
+        <div class="portfolio">
+            <h1 class="text-center">PORTFOLIO</h1>
+            <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="assets/portfolio/work4.jpg" class="card-img-top">
+                    </div>
+                    <div class="card">
+                        <img src="assets/portfolio/work3.jpg" class="card-img-top">
+                    </div>
+                    <div class="card">
+                        <img src="assets/portfolio/work2.jpg" class="card-img-top">
+                    </div>
+                    <div class="card">
+                        <img src="assets/portfolio/work1.jpg" class="card-img-top">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="Email"></label>
-                    <input type="email" class="form-control" id="email" placeholder="Email...">
+            </div>
+            <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="assets/portfolio/work5.jpg" class="card-img-top">
+                    </div>
+                    <div class="card">
+                        <img src="assets/portfolio/work6.jpg" class="card-img-top">
+                    </div>
+                    <div class="card">
+                        <img src="assets/portfolio/work7.jpg" class="card-img-top">
+                    </div>
+                    <div class="card">
+                        <img src="assets/portfolio/work8.jpg" class="card-img-top">
+                    </div>
                 </div>
-                <textarea class="form-control" rows="10">Your message here ...</textarea>
+            </div>
+        </div>
+        <div class="contact">
+            <h1 class="text-center">CONTACT US</h1>
+            <form action="" class="form">
+                <input type="text" name="" id="name" placeholder="Name..." required>
+                <input type="email" name="" id="email" placeholder="Email..." required>
+                <textarea name="" id="mess" rows="10" placeholder="Your message here..." required></textarea><br>
+                <button type="submit" class="btn" id="button">Submit</button>
             </form>
         </div>
-        <footer>
-            <ul type="none">
-                <li><img src="assets/social_icons/twitter.png"></li>
-                <li><img src="assets/social_icons/dribble.png"></li>
-                <li><img src="assets/social_icons/facebook.png"></li>
-                <li><img src="assets/social_icons/g_plus.png"></li>
-                <li><img src="assets/social_icons/skype.png"></li>
-                <li><img src="assets/social_icons/stumble_upon.png"></li>
-                <li><img src="assets/social_icons/behance.png"></li>
-                <li><img src="assets/social_icons/pinterest.png"></li>
-                <li><img src="assets/social_icons/flickr.png"></li>
-                <li><img src="assets/social_icons/you_tube.png"></li>
-            </ul>
-            <p>DELANI STUDIO</p>
-            <p>2019</p>
+        <section>
+            <div class="text-center social">
+                <img src="assets/social_icons/twitter.png" class="links">
+                <img src="assets/social_icons/dribble.png" class="links">
+                <img src="assets/social_icons/facebook.png" class="links">
+                <img src="assets/social_icons/g_plus.png" class="links">
+                <img src="assets/social_icons/skype.png" class="links">
+                <img src="assets/social_icons/stumble_upon.png" class="links">
+                <img src="assets/social_icons/behance.png" class="links">
+                <img src="assets/social_icons/pinterest.png" class="links">
+                <img src="assets/social_icons/flickr.png" class="links">
+                <img src="assets/social_icons/you_tube.png" class="links">
+            </div>
+        </section>
+        <footer class="text-center">
+            <p>DELANI STUDIO<br>2019</p>
         </footer>
     </body>
 </html>
