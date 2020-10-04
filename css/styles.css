@@ -38,13 +38,13 @@
 .what-we-do image:hover {
     cursor: pointer;
 }
-#des {
+.des {
     display: none;
 }
-#devl {
+.devl {
     display: none;
 }
-#prod {
+.prod {
     display: none;
 }
 .portfolio {
@@ -58,6 +58,19 @@
     float: right;
     position: relative;
     margin: 5px;
+}
+.imageport .port-info {
+    display:none;
+    opacity: 1;
+    background-color:silver;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    color: cyan;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    height: 100%;
 }
 .contact {
     background-image: url("../assets/backgrounds/c_image.jpg");
