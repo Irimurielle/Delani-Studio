@@ -1,33 +1,38 @@
 $(document).ready(function() {
     $('.design').click(function() {
-        $('.design').slideUp();
-        $('.des').show();
+        $('.design').toggle();
+        $('.des').toggle();
     });
     $('.des').click(function () {
-        $('.design').slideDown();
-        $('.des').hide();
+        $('.design').toggle();
+        $('.des').toggle();
     });
     $('.develop').click(function() {
-        $('.develop').slideUp();
-        $('.devl').show();
+        $('.develop').toggle();
+        $('.devl').toggle();
     });
     $('.devl').click(function () {
-        $('.develop').slideDown();
-        $('.devl').hide();
+        $('.develop').toggle();
+        $('.devl').toggle();
     });
     $('.product').click(function() {
-        $('.product').slideUp();
-        $('.prod').show();
+        $('.product').toggle();
+        $('.prod').toggle();
     });
     $('.prod').click(function () {
-        $('.product').slideDown();
-        $('.prod').hide();
+        $('.product').toggle();
+        $('.prod').toggle();
     });
-    $("form#myForm").submit(function(){
+    $('.imageport').hover(function(){
+        $('.portinfo',this).slideToggle();
+     }, function(){
+        $('.port-info',this).slideToggle();
+     });
+    $("#myForm").submit(function(){
         event.preventDefault();
-        let name = $("input#name").val();
-        let email = $("input#email").val();
-        let message = $("textarea#message").val();
+        var name = $("input#name").val();
+        var email = $("input#email").val();
+        var message = $("textarea#message").val();
         alert("Thank you for reaching out to us, we will soon get back to you");
     });
 });
