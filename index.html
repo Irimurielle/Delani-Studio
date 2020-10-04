@@ -5,7 +5,7 @@
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
+        <script src="js/scripts.js"></script>
         <title>Delani Studio</title>
     </head>
     <body>
@@ -37,70 +37,76 @@
         <div class="what-we-do">
             <h1 class="text-center">WHAT WE DO</h1>
             <div class="row text-center">
-                <div class="col">
-                    <img src="assets/services_icons/design_icon.png">
+                <div class="col-md-4">
+                    <img src="assets/services_icons/design_icon.png" class="design">
                     <p><strong>DESIGN</strong></p>
-                    <div class="hide">
-                        <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. <br> Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
-                    </div>
+                    <p class="des">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. <br> Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
                 </div>
-                <div class="col">
-                    <img src="assets/services_icons/dev_icon.png">
+                <div class="col-md-4">
+                    <img src="assets/services_icons/dev_icon.png" class="develop">
                     <p><strong>DEVELOPMENT</strong></p>
-                    <div class="hide">
-                        <p>All engineers are fluent in the latest enterprise, mobile and web development technologies. <br> They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
-                    </div>
+                    <p class="devl">All engineers are fluent in the latest enterprise, mobile and web development technologies. <br> They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
                 </div>
-                <div class="col">
-                    <img src="assets/services_icons/product_icon.png">
+                <div class="col-md-4">
+                    <img src="assets/services_icons/product_icon.png" class="product">
                     <p><strong>PRODUCT MANAGEMENT</strong></p>
-                    <div class="hide">
-                        <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. <br> This iterative process allows for changes as business requirements evolve.</p>
-                    </div>
+                    <p class="prod">Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. <br> This iterative process allows for changes as business requirements evolve.</p>
                 </div>
             </div>
         </div>
         <div class="portfolio">
             <h1 class="text-center">PORTFOLIO</h1>
             <div class="row">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="assets/portfolio/work4.jpg" class="card-img-top">
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work4.jpg" class="image">
                     </div>
-                    <div class="card">
-                        <img src="assets/portfolio/work3.jpg" class="card-img-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work3.jpg" class="image">
                     </div>
-                    <div class="card">
-                        <img src="assets/portfolio/work2.jpg" class="card-img-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work2.jpg" class="image">
                     </div>
-                    <div class="card">
-                        <img src="assets/portfolio/work1.jpg" class="card-img-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work1.jpg" class="image">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="assets/portfolio/work5.jpg" class="card-img-top">
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work5.jpg" class="image">
                     </div>
-                    <div class="card">
-                        <img src="assets/portfolio/work6.jpg" class="card-img-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work6.jpg" class="image">
                     </div>
-                    <div class="card">
-                        <img src="assets/portfolio/work7.jpg" class="card-img-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work7.jpg" class="image">
                     </div>
-                    <div class="card">
-                        <img src="assets/portfolio/work8.jpg" class="card-img-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="imageport">
+                        <img src="assets/portfolio/work8.jpg" class="image">
                     </div>
                 </div>
             </div>
         </div>
         <div class="contact">
             <h1 class="text-center">CONTACT US</h1>
-            <form action="" class="form">
+            <form action="" class="form" id="myForm">
                 <input type="text" name="" id="name" placeholder="Name..." required>
                 <input type="email" name="" id="email" placeholder="Email..." required>
-                <textarea name="" id="mess" rows="10" placeholder="Your message here..." required></textarea><br>
+                <textarea name="" id="message" rows="10" placeholder="Your message here..." required></textarea><br>
                 <button type="submit" class="btn" id="button">Submit</button>
             </form>
         </div>
