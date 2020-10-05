@@ -30,9 +30,9 @@ $(document).ready(function() {
      });
     $("#myForm").submit(function(){
         event.preventDefault();
-        var name = $("input#name").val();
-        var email = $("input#email").val();
-        var message = $("textarea#message").val();
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
         alert("hello" +name+ " thank you for reaching out to us, we will soon get back to you");
     });
     $("button").on('click', function(){
