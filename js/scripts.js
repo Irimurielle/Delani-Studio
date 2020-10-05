@@ -1,27 +1,27 @@
 $(document).ready(function() {
     $('.design').click(function() {
-        $('.design').toggle('slow');
-        $('.des').toggle('slow');
+        $('.design').toggle();
+        $('.des').toggle();
     });
     $('.des').click(function () {
-        $('.design').toggle('slow');
-        $('.des').toggle('slow');
+        $('.design').toggle();
+        $('.des').toggle();
     });
     $('.develop').click(function() {
-        $('.develop').toggle('slow');
-        $('.devl').toggle('slow');
+        $('.develop').toggle();
+        $('.devl').toggle();
     });
     $('.devl').click(function () {
-        $('.develop').toggle('slow');
-        $('.devl').toggle('slow');
+        $('.develop').toggle();
+        $('.devl').toggle();
     });
     $('.product').click(function() {
-        $('.product').toggle('slow');
-        $('.prod').toggle('slow');
+        $('.product').toggle();
+        $('.prod').toggle();
     });
     $('.prod').click(function () {
-        $('.product').toggle('slow');
-        $('.prod').toggle('slow');
+        $('.product').toggle();
+        $('.prod').toggle();
     });
     $('.imageport').hover(function(){
         $('.portinfo',this).slideToggle('slow');
@@ -33,6 +33,11 @@ $(document).ready(function() {
         var name = $("input#name").val();
         var email = $("input#email").val();
         var message = $("textarea#message").val();
-        alert(name + " " + "thank you for reaching out to us, we will soon get back to you");
+        alert("hello" +name+ " thank you for reaching out to us, we will soon get back to you");
+    });
+    $("button").on('click', function(){
+        $('form').each(function(){
+            this.reset();
+        });
     });
 });
